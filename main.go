@@ -1,9 +1,9 @@
 package main
 
-import (
-	"log"
-)
+import iocontroller "github.com/fallion/attis-server/internal/io-controller"
 
 func main() {
-	log.Println("hello world")
+	service := iocontroller.Service{}
+
+	service.TurnOnLED()
 }
